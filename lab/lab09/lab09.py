@@ -120,7 +120,7 @@ def make_generators_generator(g):
     i = 1
     for item in g():
         yield gen(i)
-        i -= 1
+        i += 1
 
 class Button:
     """
